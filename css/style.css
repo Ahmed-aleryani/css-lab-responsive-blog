@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+body {
+    width: auto;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.float-right {
+    float: right;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* my name card */
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nameCard {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin:  0 auto;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.profilePic {
+    width: 100%;
+    height: 300px;
+    background-image: url('/img_avatar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+
+.nameCardContainer {
+    padding-left:14px;
+    padding: 0 8px 8px 8px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* tags card */
+
+.tagsCard {
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    background-color: #fff;
+   
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#title {
+    width: 100%;
+    background-color: rgb(202, 199, 199);
+    padding-left: 10px;
+    margin: 0px;
+    font-size: 25px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.tags a {
+    flex: 0 0 5.33%;
+    margin: 1px;
+    padding: 2px 5px;
+    background-color: rgb(241, 238, 238);
+    color: rgb(110, 108, 108) ;
+}
+
+.tags a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.tagsCard div {
+    background-color: f1f1f1;
+    margin: 0px;
+    padding: 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+/*popular*/
+
+.popular{
+    width:90%;
+    margin: 60px auto;
+    background-color: #fff;
+    box-shadow:0px 0px 6px 0px gray;
+    border-radius: 1px;
+     padding-bottom: 10px;
+  
+}
+.popular p{
+    background-color: #f1f1f1;
+    padding: 15px;
+    line-height: 30px;
+   
+}
+.post{
+    padding:3px 15px;
+
+
+    display: flex;
+}
+.post img{
+    width:40px;
+}
+.popularHr{
+    border:none;
+    border-top:1px solid gray;
+}
+.boxLorm{
+    padding-left:10px;
+}
+.sidd{
+    font-size: small;
+}
+/* the title heading and the blog */
+
+
+.card {
+    width: 92%;
+    margin: 0 auto 40px auto ;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+.padding{
+    padding: 15px 12px;
+}
+
+
+.card span {
+    color: gray;
+    font-weight: normal;
+}
+
+.card img {
+    background-size: cover;
+    max-height:400px;
+    width: 100%;
+}
+
+.status{
+    padding-bottom: 30px ;
+}
+
+.status button {
+    float: left;
+
+}
+
+.status .comment {
+    float: right;
+
+}
+
+.status span {
+    color: black;
+}
+button {
+    background-color: white;
+    padding: 5px;
+    border: 0.5px solid lightgray;
+}
+
+.status .comment .counter {
+    padding: 0 8px;
+    margin-right: 6px;
+    background: black;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+
+.circle {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+
+
+.bg-gray{
+    background-color: rgb(241, 238, 238);
+}
+
+.bg-black{
+    background-color: black;
+}
+.bg-wihe{
+    background-color: #fff;
+}
+
+.text-white{
+color: white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width:768px) {
+    body{
+        font-size: 16px;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .nameCard ,.popular ,.tagsCard{
+        width: 65%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+   
+
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    .full_page {
+        height: 100vh !important;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
